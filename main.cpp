@@ -9,6 +9,33 @@
 int main()
 {
 
+	class A1 : public EventTemplate<A1>
+	{
+	};
+	class A2 : public EventTemplate<A2>
+	{
+	};
+	class A3 : public EventTemplate<A3>
+	{
+	};
+	class A4 : public EventTemplate<A4>
+	{
+	};
+
+	auto a1 = new A1();
+	auto a2 = new A2();
+	auto a3 = new A3();
+	auto a4 = new A4();
+
+	auto a5 = new A1();
+
+	std::cout << "a1 " << a1->getType() << std::endl;
+	std::cout << "a2 " << a2->getType() << std::endl;
+	std::cout << "a3 " << a3->getType() << std::endl;
+	std::cout << "a4 " << a4->getType() << std::endl;
+
+	std::cout << "a5 " << a5->getType() << std::endl;
+
 
 	//#define PRINT_TYPE(type) \
 //	std::cout << #type << " " <<  TypesRegister::getId<type>() << std::endl
