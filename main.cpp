@@ -4,29 +4,33 @@
 
 #include "TypesRegister.h"
 
+#include "Event.h"
+
 int main()
 {
-#define PRINT_TYPE(type) \
-	std::cout << #type << " " <<  TypesRegister::getId<type>() << std::endl
 
 
-	class GGG
-	{
-
-	};
-	class AAA{
-
-	};
-
-	PRINT_TYPE(int);
-	PRINT_TYPE(char);
-	PRINT_TYPE(double);
-	PRINT_TYPE(const double);
-	PRINT_TYPE(int);
-	PRINT_TYPE(double *);
-	PRINT_TYPE(GGG);
-	PRINT_TYPE(AAA);
-	PRINT_TYPE(GGG);
+	//#define PRINT_TYPE(type) \
+//	std::cout << #type << " " <<  TypesRegister::getId<type>() << std::endl
+//
+//
+//	class GGG
+//	{
+//
+//	};
+//	class AAA{
+//
+//	};
+//
+//	PRINT_TYPE(int);
+//	PRINT_TYPE(char);
+//	PRINT_TYPE(double);
+//	PRINT_TYPE(const double);
+//	PRINT_TYPE(int);
+//	PRINT_TYPE(double *);
+//	PRINT_TYPE(GGG);
+//	PRINT_TYPE(AAA);
+//	PRINT_TYPE(GGG);
 
 
 	//	Display *display = XOpenDisplay(nullptr);

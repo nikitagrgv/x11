@@ -7,6 +7,4 @@ class KeyEvent : public EventTemplate<KeyEvent>
 public:
 	KeyEvent() = default;
 
-
-
 };
